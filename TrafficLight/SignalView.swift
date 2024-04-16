@@ -17,22 +17,22 @@ struct SignalView: View {
         VStack {
             Circle()
                 .frame(width: 150, height: 150)
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 .foregroundStyle(.red)
                 .opacity(redOpacity)
-                .padding(.top, 10)
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .padding()
             Circle()
                 .frame(width: 150, height: 150)
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 .foregroundStyle(.yellow)
                 .opacity(yellowOpacity)
-                .padding(.top, 10)
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .padding()
             Circle()
                 .frame(width: 150, height: 150)
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 .foregroundStyle(.green)
                 .opacity(greenOpacity)
-                .padding(.top, 10)
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .padding()
         }
     }
 }

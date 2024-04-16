@@ -31,13 +31,15 @@ struct TrafficLight: View {
                 isStarted = true
             }) {
                 Text(isStarted ? "NEXT" : "START")
-                    .frame(width: 70, height: 20)
+                    .font(.title.bold())
+                    .frame(width: 150, height: 30)
                     .padding()
                     .background(Color.blue)
+                    .cornerRadius(20)
                     .foregroundColor(.white)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 4))
+                    .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 4))
             }
-            .padding(.top, 50)
+            .padding(.top, 100)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
