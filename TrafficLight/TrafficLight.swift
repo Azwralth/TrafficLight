@@ -10,27 +10,20 @@ import SwiftUI
 struct TrafficLight: View {
     
     @State private var currentLight = CurrentLight.red
-    @State private var isStarted = false
+    @State private var buttonTitle = "START"
     
     @State private var redOpacity = 0.3
     @State private var yellowOpacity = 0.3
     @State private var greenOpacity = 0.3
     
-    let lightsOff = 0.3
-    let lightsOn = 1.0
-    
     var body: some View {
         VStack {
-            SignalView(
-                redOpacity: redOpacity,
-                yellowOpacity: yellowOpacity,
-                greenOpacity: greenOpacity
-            )
-            Button(action: {
-                getNextLight()
-                isStarted = true
-            }) {
-                Text(isStarted ? "NEXT" : "START")
+            SignalView(opacity: redOpacity, color: .red)
+            SignalView(opacity: yellowOpacity, color: .yellow)
+            SignalView(opacity: greenOpacity, color: .green)
+            
+            Button(action: getNextLight) {
+                Text(buttonTitle)
                     .font(.title.bold())
                     .frame(width: 150, height: 30)
                     .padding()
@@ -46,8 +39,12 @@ struct TrafficLight: View {
     }
     
     private func getNextLight() {
+        let lightsOff = 0.3
+        let lightsOn = 1.0
+        
         switch currentLight {
         case .red:
+            buttonTitle = "NEXT"
             currentLight = .yellow
             redOpacity = lightsOn
             greenOpacity = lightsOff

@@ -11,7 +11,6 @@
 		76DA9D9A2BCDD7B300FAFCB7 /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA9D992BCDD7B300FAFCB7 /* TrafficLight.swift */; };
 		76DA9D9C2BCDD7B400FAFCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DA9D9B2BCDD7B400FAFCB7 /* Assets.xcassets */; };
 		76DA9D9F2BCDD7B400FAFCB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DA9D9E2BCDD7B400FAFCB7 /* Preview Assets.xcassets */; };
-		76DA9DA62BCDD9C600FAFCB7 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA9DA52BCDD9C600FAFCB7 /* Light.swift */; };
 		76DA9DA82BCE9A6000FAFCB7 /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA9DA72BCE9A6000FAFCB7 /* SignalView.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +20,6 @@
 		76DA9D992BCDD7B300FAFCB7 /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
 		76DA9D9B2BCDD7B400FAFCB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76DA9D9E2BCDD7B400FAFCB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		76DA9DA52BCDD9C600FAFCB7 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
 		76DA9DA72BCE9A6000FAFCB7 /* SignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +56,6 @@
 				76DA9D972BCDD7B300FAFCB7 /* TrafficLightApp.swift */,
 				76DA9D992BCDD7B300FAFCB7 /* TrafficLight.swift */,
 				76DA9DA72BCE9A6000FAFCB7 /* SignalView.swift */,
-				76DA9DA52BCDD9C600FAFCB7 /* Light.swift */,
 				76DA9D9B2BCDD7B400FAFCB7 /* Assets.xcassets */,
 				76DA9D9D2BCDD7B400FAFCB7 /* Preview Content */,
 			);
@@ -144,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76DA9DA82BCE9A6000FAFCB7 /* SignalView.swift in Sources */,
-				76DA9DA62BCDD9C600FAFCB7 /* Light.swift in Sources */,
 				76DA9D9A2BCDD7B300FAFCB7 /* TrafficLight.swift in Sources */,
 				76DA9D982BCDD7B300FAFCB7 /* TrafficLightApp.swift in Sources */,
 			);
