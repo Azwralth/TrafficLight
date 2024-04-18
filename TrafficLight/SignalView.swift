@@ -14,7 +14,7 @@ struct SignalView: View {
     
     var body: some View {
         Circle()
-            .frame(width: 150, height: 150)
+            .frame(width: 150)
             .foregroundStyle(color)
             .opacity(opacity)
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
